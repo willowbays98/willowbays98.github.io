@@ -1,0 +1,193 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header {
+background: ;
+height: 300px;
+} 
+
+.footer {
+    background: red;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main {
+    text-align: left;
+    background: ;
+    height: 400px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aside1 {
+    background: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aside2 {
+    background: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media all and (min-width: 800px){
+    .main {
+        flex: 3;
+    }
+
+    .aside1 {
+        order: 2;
+    }
+
+    .aside2 {
+        order: 3;
+    }
+
+    .main {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+    .main2{
+        order: 1;
+    }
+    .main3{
+        order: 2;
+    }
+}
+@media all and (min-width: 600px){
+.aside{
+    flex: 1;
+}
+}
+
+
+
+
+
+.container {
+    box-sizing: border-box;
+    padding: 10;
+    margin: 0;
+}
+body {
+    background: lightblue;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card-image {
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+.shop-1 {
+background-image: url("http://www.houseofvintagenw.com/wp-content/uploads/2016/02/DSC_0013-1080x800.jpg");
+    }
+.shop-2 {
+    background-image: url("https://www.onlyinyourstate.com/wp-content/uploads/2018/01/379322_438515956216381_692799582_n.jpg");
+    }
+.shop-3 {
+        background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/04/42/80/getlstd-property-photo.jpg?w=1200&h=1200&s=1");
+        }
+.card h2 {
+    padding: 10px;
+}
+.card p {
+    padding: 10px;  
+}
+.card a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 10px;
+}
+a { text-decoration: none; }
+
+
+
+
+.container2 .section {
+    width: 308px;
+    position: relative;
+    margin: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container2 .section .imgBx {
+position: relative;
+width: 260px;
+left: 20px;
+}
+
+.container2 .section .imgBx img 
+{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imgBx:hover img{
+    transform: scale(1.1);
+}
+
+
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: boarder-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    display: flex;
+   
+}
+.image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px)
+.image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+    
+}
+
+
+
+

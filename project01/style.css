@@ -45,3 +45,18 @@ body {
       
     }
       a { text-decoration: none; }
+
+      /* unvisited link */
+a:link {
+  color: #000;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}

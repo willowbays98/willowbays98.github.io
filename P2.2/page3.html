@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page three</title>
+   
+    
+    <style>
+        body {
+    background: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+         .image-grid {
+            display: flex;
+            width: 90%;
+            margin: 20px;
+            flex-wrap: wrap;
+         }
+         .grid-image {
+            display: block;
+            flex-basis: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+            @media only screen and (min-width: 640px) {
+             .grid-image {
+             flex-basis: 50%;
+                 }
+               }
+
+             @media only screen and (min-width: 960px) {
+             .grid-image {
+              flex-basis: 33.333%;
+              }
+              }
+
+
+        </style>
+        </head>
+        <body>
+
+<div class="image-grid">
+<img src="images1/oo5.png" style="width: 80%;">
+<img src="images1/o6.png" style="width: 80%;">
+<img src="images1/o8.png" style="width: 80%;">
+<img src="images1/o9.png" style="width: 80%;">
+<img src="images1/o10.png" style="width: 80%;">
+<img src="images1/o11.png" style="width: 80%;">
+<img src="images1/o12.png" style="width: 80%;">
+<img src="images1/o13.png" style="width: 80%;">
+</div>       
+
+</body>
+</html>
